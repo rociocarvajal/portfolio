@@ -50,3 +50,14 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 
 }
+
+const form = document.getElementById("#formAction");
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+  // Realiza el envío del formulario
+
+  // Redirige a tu página después de enviar el formulario
+  window.location.href = "index.html"; // Reemplaza "tu-pagina.html" con la URL de tu página
+
+});
