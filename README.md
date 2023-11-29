@@ -1,4 +1,4 @@
-## Rocio Cravajal - Portfolio 
+## Rocio Carvajal - Portfolio 
 
 Bienvenidos/as a mi portfolio! Este README contiene una vision general de mi trabajo, las tecnologías utilizadas y como puedes explorar mi proyecto. :smile_cat:
 
