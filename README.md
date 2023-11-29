@@ -14,7 +14,7 @@ Bienvenidos/as a mi portfolio! Este README contiene una vision general de mi tra
 
 ![Captura de pantalla (358)](https://github.com/rociocarvajal/portfolio/assets/136781946/a921a283-41fd-4c65-a1a2-37497d035af9)
 
-- _[Read more](https://rociocarvajal.github.io/portfolio/pdf/RocioCarvajal.pdf)_
+- _[Read more](https://rociocarvajal.github.io/portfolio/pdf/RocioCarvajal.pdf)_ (contiene cv)
 
 > Education
 
