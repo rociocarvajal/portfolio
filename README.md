@@ -6,7 +6,6 @@ Bienvenidos/as a mi portfolio! Este README contiene una vision general de mi tra
 
 ![Captura de pantalla (356)](https://github.com/rociocarvajal/portfolio/assets/136781946/7a5fddbb-bbf5-4e40-a315-0a81d20701d6)
 
-<a href="https://api.whatsapp.com/send?phone=5492996134902"><img src="https://img.shields.io/badge/whatsapp-%2325D366.svg?style=plastic&logo=whatsapp&logoColor=white" alt="Whatsapp"/></a>
 <a href="https://github.com/rociocarvajal"><img src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://www.linkedin.com/in/rocio-carvajal-9983ab280/"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 
