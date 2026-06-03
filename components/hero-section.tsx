@@ -7,9 +7,9 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center px-6 pt-20"
+      className="min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-20"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl">
         <span className="text-primary font-medium tracking-widest text-sm uppercase mb-6 block">
           Desarrollador Frontend
         </span>
@@ -23,12 +23,12 @@ export function HeroSection() {
           </span>
         </h1>
 
-        <p className="mt-8 text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-8 text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed">
           Especializado en React, Next.js y diseño de interfaces. Transformo
           ideas en productos digitales elegantes y funcionales.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Button
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-8"
@@ -47,7 +47,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 flex flex-col items-center gap-2 text-muted-foreground animate-pulse">
+      <div className="absolute bottom-10 left-6 md:left-16 lg:left-24 flex items-center gap-2 text-muted-foreground animate-pulse">
         <ArrowDown size={20} />
         <span className="text-sm">Scroll para explorar</span>
       </div>
