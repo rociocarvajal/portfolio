@@ -1,4 +1,4 @@
-import { SKILLS, STATS } from "@/constants/skills"
+import { skills, stats } from "@/constants/skills"
 
 export function SkillsSection() {
   return (
@@ -13,7 +13,7 @@ export function SkillsSection() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {SKILLS.map((skill) => (
+          {skills.map((skill) => (
             <div
               key={skill.category}
               className="bg-background/50 backdrop-blur-sm border border-border rounded-xl p-6"
@@ -36,7 +36,7 @@ export function SkillsSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {STATS.map((stat) => (
+          {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.number}

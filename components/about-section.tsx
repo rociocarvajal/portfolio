@@ -1,4 +1,4 @@
-import { STATS } from "@/constants/skills"
+import { stats } from "@/constants/skills"
 
 export function AboutSection() {
   return (
@@ -27,7 +27,7 @@ export function AboutSection() {
         </p>
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {STATS.map((stat) => (
+          {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.number}

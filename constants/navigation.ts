@@ -4,7 +4,7 @@ export interface NavItem {
   id: string
 }
 
-export const NAV_ITEMS: NavItem[] = [
+export const navItems: NavItem[] = [
   { name: "Home", href: "#home", id: "home" },
   { name: "About", href: "#about", id: "about" },
   { name: "Skills", href: "#skills", id: "skills" },

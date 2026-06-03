@@ -6,7 +6,7 @@ export interface SocialLink {
   href: string
 }
 
-export const SOCIAL_LINKS: SocialLink[] = [
+export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
     icon: require("lucide-react").Github,
@@ -24,4 +24,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ]
 
-export const CONTACT_EMAIL = "correo@ejemplo.com"
+export const contactEmail = "correo@ejemplo.com"

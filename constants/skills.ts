@@ -3,7 +3,7 @@ export interface SkillCategory {
   items: string[]
 }
 
-export const SKILLS: SkillCategory[] = [
+export const skills: SkillCategory[] = [
   {
     category: "Frontend",
     items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
@@ -23,7 +23,7 @@ export interface Stat {
   label: string
 }
 
-export const STATS: Stat[] = [
+export const stats: Stat[] = [
   { number: "5+", label: "Años experiencia" },
   { number: "50+", label: "Proyectos" },
   { number: "30+", label: "Clientes" },

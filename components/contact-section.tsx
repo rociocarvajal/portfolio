@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
-import { SOCIAL_LINKS, CONTACT_EMAIL } from "@/constants/social"
+import { socialLinks, contactEmail } from "@/constants/social"
 
 export function ContactSection() {
   return (
@@ -24,14 +24,14 @@ export function ContactSection() {
           className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 gap-2"
           asChild
         >
-          <a href={`mailto:${CONTACT_EMAIL}`}>
+          <a href={`mailto:${contactEmail}`}>
             <Mail size={20} />
             Enviar email
           </a>
         </Button>
 
         <div className="mt-12 flex items-center justify-center gap-6">
-          {SOCIAL_LINKS.map((social) => (
+          {socialLinks.map((social) => (
             <a
               key={social.name}
               href={social.href}

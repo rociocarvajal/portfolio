@@ -3,12 +3,12 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { NAV_ITEMS } from "@/constants/navigation"
+import { navItems } from "@/constants/navigation"
 import { useActiveSection } from "@/hooks/useActiveSection"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const sectionIds = NAV_ITEMS.map((item) => item.id)
+  const sectionIds = navItems.map((item) => item.id)
   const activeSection = useActiveSection(sectionIds)
 
   return (
@@ -17,7 +17,7 @@ export function Navigation() {
         <div className="flex items-center justify-center">
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
-            {NAV_ITEMS.map((item) => {
+            {navItems.map((item) => {
               const isActive = activeSection === item.id
               return (
                 <li key={item.name}>
@@ -54,7 +54,7 @@ export function Navigation() {
             id="mobile-menu"
             className="md:hidden mt-4 flex flex-col items-center gap-4 pb-4"
           >
-            {NAV_ITEMS.map((item) => {
+            {navItems.map((item) => {
               const isActive = activeSection === item.id
               return (
                 <li key={item.name}>
