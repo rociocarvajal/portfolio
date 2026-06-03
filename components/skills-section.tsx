@@ -1,17 +1,4 @@
-const skills = [
-  {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    category: "Herramientas",
-    items: ["Git", "Figma", "VS Code", "Vercel"],
-  },
-  {
-    category: "Otros",
-    items: ["Node.js", "REST APIs", "GraphQL", "Testing"],
-  },
-]
+import { SKILLS, STATS } from "@/constants/skills"
 
 export function SkillsSection() {
   return (
@@ -26,7 +13,7 @@ export function SkillsSection() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {skills.map((skill) => (
+          {SKILLS.map((skill) => (
             <div
               key={skill.category}
               className="bg-background/50 backdrop-blur-sm border border-border rounded-xl p-6"
@@ -44,6 +31,17 @@ export function SkillsSection() {
                   </li>
                 ))}
               </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+          {STATS.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                {stat.number}
+              </div>
+              <div className="text-muted-foreground text-sm">{stat.label}</div>
             </div>
           ))}
         </div>

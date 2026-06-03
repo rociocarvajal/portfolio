@@ -1,3 +1,5 @@
+import { STATS } from "@/constants/skills"
+
 export function AboutSection() {
   return (
     <section id="about" className="py-24 px-6">
@@ -25,12 +27,7 @@ export function AboutSection() {
         </p>
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { number: "5+", label: "Años experiencia" },
-            { number: "50+", label: "Proyectos" },
-            { number: "30+", label: "Clientes" },
-            { number: "100%", label: "Satisfacción" },
-          ].map((stat) => (
+          {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.number}
