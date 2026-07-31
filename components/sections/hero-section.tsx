@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { basePath } from "@/lib/base-path";
 
-
 export function HeroSection() {
   return (
     <section
@@ -25,22 +24,26 @@ export function HeroSection() {
         aria-hidden="true"
         className="absolute bottom-0 left-0 h-1/2 md:h-full object-contain object-bottom opacity-30 md:opacity-30 pointer-events-none select-none z-0"
       />
-      <div className="max-w-4xl mx-auto text-center -translate-y-20">
+      <div className="max-w-3xl mx-auto text-center -translate-y-20">
         <TypewriterText />
-
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-balance">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           Building{" "}
-          <span className="text-primary/80 italic font-normal">modern webs</span>{" "}
-          with thoughtful design and{" "}
+          <span className="text-primary/80 italic font-normal">
+            modern webs
+          </span>
+          <br />
+          with{" "}
           <span className="text-primary italic font-normal">
-            scalable solutions
+            thoughtful design
           </span>{" "}
+          and scalable solutions
         </h1>
 
-        <p className="mt-4 text-muted-foreground text-base max-w-xl mx-auto leading-relaxed text-balance">
-          Web developer passionate about building intuitive interfaces, reliable
-          systems, and scalable applications. Experienced in frontend and backend
-          development, databases, and creating solutions focused on performance, usability, and maintainability.
+        <p className="mt-4 text-muted-foreground text-base md:text-lg max-w-lg md:max-w-xl mx-auto leading-8 md:leading-relaxed">
+          Web developer passionate about building intuitive interfaces and
+          scalable applications. Experienced in frontend and backend
+          development, databases, and creating solutions focused on performance,
+          usability, and maintainability.
         </p>
         <div className="relative mt-6 flex justify-center">
           <div className="flex gap-3 relative z-10">

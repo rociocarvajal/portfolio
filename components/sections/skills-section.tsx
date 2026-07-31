@@ -1,13 +1,11 @@
 import { skills } from "@/constants/skills";
+import { basePath } from "@/lib/base-path";
 
 export function SkillsSection() {
   return (
-    <section
-      id="skills"
-      className="relative py-10 px-6 bg-black scroll-mt-14"
-    >
+    <section id="skills" className="relative py-10 px-6 bg-black scroll-mt-14">
       <img
-        src="/assets/ferns.png"
+        src={`${basePath}/assets/ferns.png`}
         alt=""
         aria-hidden="true"
         className="
