@@ -75,7 +75,7 @@ export function HeroSection() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a
-                    href="/puplic/resume/rociocarvajal-es.pdf"
+                    href="/public/resume/rociocarvajal-es.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
