@@ -1,8 +1,10 @@
-import { MetadataRoute } from "next"
+import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://tuportfolio.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://rociocarvajal.github.io/portfolio";
 
   return [
     {
@@ -29,5 +31,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-  ]
+  ];
 }
