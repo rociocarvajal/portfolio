@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, Loader2, CheckCircle2, XCircle } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { socialLinks } from "@/constants/social";
@@ -14,6 +14,12 @@ export function ContactSection() {
     message: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
+
+  useEffect(() => {
+    emailjs.init({
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+    });
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -33,8 +39,7 @@ export function ContactSection() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        }
       );
 
       setStatus("success");
@@ -123,8 +128,6 @@ export function ContactSection() {
             )}
           </div>
         </form>
-
-       
       </div>
     </section>
   );
