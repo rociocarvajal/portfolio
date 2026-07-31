@@ -19,31 +19,32 @@ export function useActiveSection(sectionIds: string[]): string {
   )
 
   useEffect(() => {
+    // Si el scroll está cerca del top, siempre es home
+    const handleScroll = () => {
+      if (window.scrollY < 100) {
+        setActiveSection(sectionIds[0])
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [sectionIds])
+
+  useEffect(() => {
     if (sectionIds.length === 0) return
 
-    // Configurar Intersection Observer
-    const observerOptions: IntersectionObserverInit = {
+    const observer = new IntersectionObserver(handleIntersection, {
       root: null,
       rootMargin: "-50% 0px -50% 0px",
       threshold: 0,
-    }
-
-    const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
-    )
-
-    // Observar todas las secciones
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id)
-      if (element) {
-        observer.observe(element)
-      }
     })
 
-    return () => {
-      observer.disconnect()
-    }
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id)
+      if (element) observer.observe(element)
+    })
+
+    return () => observer.disconnect()
   }, [sectionIds, handleIntersection])
 
   return activeSection

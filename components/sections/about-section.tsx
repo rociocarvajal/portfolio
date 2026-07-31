@@ -1,4 +1,4 @@
-import { stats } from "@/constants/skills"
+/* import { stats } from "@/constants/skills"
 
 export function AboutSection() {
   return (
@@ -40,3 +40,4 @@ export function AboutSection() {
     </section>
   )
 }
+ */

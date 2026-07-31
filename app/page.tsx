@@ -1,8 +1,9 @@
 import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { SkillsSection } from "@/components/skills-section"
-import { ContactSection } from "@/components/contact-section"
+import { HeroSection } from "@/components/sections/hero-section"
+import { ExperienceSection } from "@/components/sections/experience-section"
+import { SkillsSection } from "@/components/sections/skills-section"
+import { EducationSection } from "@/components/sections/education-section"
+import { ContactSection } from "@/components/sections/contact-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -10,8 +11,9 @@ export default function Home() {
     <main className="relative">
       <Navigation />
       <HeroSection />
-      <AboutSection />
+      <ExperienceSection />
       <SkillsSection />
+      <EducationSection />
       <ContactSection />
       <Footer />
     </main>
