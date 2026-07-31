@@ -10,6 +10,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { basePath } from "@/lib/base-path";
+
 
 export function HeroSection() {
   return (
@@ -18,7 +20,7 @@ export function HeroSection() {
       className="relative bg-black min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-20"
     >
       <img
-        src="/assets/lycorisradiata.png"
+        src={`${basePath}/assets/lycorisradiata.png`}
         alt=""
         aria-hidden="true"
         className="absolute bottom-0 left-0 h-1/2 md:h-full object-contain object-bottom opacity-30 md:opacity-30 pointer-events-none select-none z-0"
@@ -66,7 +68,7 @@ export function HeroSection() {
               >
                 <DropdownMenuItem asChild>
                   <a
-                    href="/resume/rociocarvajal-en.pdf"
+                    href={`${basePath}/resume/rociocarvajal-en.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -75,7 +77,7 @@ export function HeroSection() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a
-                    href="/public/resume/rociocarvajal-es.pdf"
+                    href={`${basePath}/resume/rociocarvajal-es.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
