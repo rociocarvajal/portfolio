@@ -28,8 +28,8 @@ export function HeroSection() {
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-balance">
           Building{" "}
-          <span className="text-primary/80 italic font-normal">modern web</span>{" "}
-          applications, with thoughtful design and{" "}
+          <span className="text-primary/80 italic font-normal">modern webs</span>{" "}
+          with thoughtful design and{" "}
           <span className="text-primary italic font-normal">
             scalable solutions
           </span>{" "}
