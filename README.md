@@ -1,1 +1,1 @@
- <a href="https://rociocarvajal.github.io/portfolio/" target="_blank">portfolio </a><img src="https://github.com/rociocarvajal/rociocarvajal/assets/136781946/39ed477f-99ba-47f1-a08d-c141eda97f0a" width ="25">
+ <a href="https://rociocarvajal.github.io/portfolio/" target="_blank">portfolio </a>
